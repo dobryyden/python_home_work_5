@@ -19,12 +19,12 @@ def items_by_category(purchases):
             items_by_cat[category] = []
         if purchase["item"] not in items_by_cat[category]:
             items_by_cat[category].append(purchase["item"])
-    return print(f"Товары по категориям: {items_by_category}")
+    return print(f"Товары по категориям: {items_by_cat}")
 
 # Вывод всех покупок, где цена товара больше или равна min_price
 def expensive_purchases(purchases, min_price):
     expensive_pur = []
-    for item in expensive_pur:
+    for item in purchases:
         if item["price"] >= min_price:
             expensive_pur.append(item)
     return print(f"Покупки дороже {min_price}: {expensive_pur}")
