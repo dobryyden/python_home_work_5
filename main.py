@@ -42,7 +42,6 @@ def average_price_by_category(purchases):
         averages_by_category[category] = sum(prices) / len(prices)
     return print(f"Средняя цена по категориям: {averages_by_category}")
 
-
 # Вывод категорию, в которой куплено больше всего единиц товаров (учитывается по полю quantity)
 def most_frequent_category(purchases):
     category_quantities = {}
